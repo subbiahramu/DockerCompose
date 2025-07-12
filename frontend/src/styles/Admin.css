@@ -1,0 +1,152 @@
+.admin-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.admin-container h1 {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.add-item-section {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.add-item-section h2 {
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.add-item-section form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.add-item-section input {
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.add-item-section input[type="file"] {
+    padding: 0.5rem;
+    border: 2px dashed var(--border-color);
+    background: #f8f9fa;
+    cursor: pointer;
+}
+
+.add-item-section button {
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.add-item-section button:hover {
+    background: darken(var(--primary-color), 10%);
+    transform: translateY(-2px);
+}
+
+.image-preview {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border: 2px solid var(--border-color);
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.item-card {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.item-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.item-actions button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.item-actions button:first-child {
+    background: var(--primary-color);
+    color: white;
+}
+
+.item-actions button:last-child {
+    background: var(--accent-color);
+    color: white;
+}
+
+.edit-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.edit-form input {
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.edit-form button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.edit-form button:first-child {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.edit-form button:last-child {
+    background: var(--accent-color);
+    color: white;
+} 
